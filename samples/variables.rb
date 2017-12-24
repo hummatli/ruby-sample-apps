@@ -11,3 +11,4 @@ puts x
 
 $l = 1
 puts $l
+
