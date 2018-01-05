@@ -40,6 +40,23 @@ class Animal
     end
 end
 
+class Cow < Animal
+    def noise
+        "My noise is " + @noise
+    end
+    def noise
+        "My noise is, overriden " + @noise
+    end
+end
+
+class Pig < Animal
+    def noise
+        
+        "Hello #{super}"
+    end
+end
+
+
 puts Animal.species.inspect
 
 animal = Animal.new("Moo")
@@ -49,5 +66,14 @@ puts animal.noise + " " + animal.name + " " + animal.legs.to_s + " " + animal.ar
 animal2 = Animal.create_with_attributes("Quack", "red")
 animal2.name = "duck"
 puts animal2.noise + " " + animal2.name + " " + animal.legs.to_s + " " + animal.arms.to_s
+
+
+
+mumu = Cow.new("Moo!")
+puts mumu.noise
+
+pig = Pig.new("Oink!")
+puts pig.noise
+
 
 puts Animal.current_animals
