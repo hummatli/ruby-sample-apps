@@ -51,8 +51,8 @@ end
 
 class Pig < Animal
     def noise
-        
-        "Hello #{super}"
+        parent_noise = super
+        "Hello #{parent_noise}"
     end
 end
 
