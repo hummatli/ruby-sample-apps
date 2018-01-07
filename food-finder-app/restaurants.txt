@@ -1,2 +1,4 @@
 Meridian	Milli	10
 Boyuk Frat	Turkish	5
+kabab	Azerbaijan	5
+s	s	3
